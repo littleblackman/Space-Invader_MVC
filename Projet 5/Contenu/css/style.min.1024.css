@@ -1,0 +1,214 @@
+@media screen and (max-width: 780px) { /* quand la resolution est inférieur a 780 // sur f12 a : 780 X 947 */ 
+	
+body {
+    background-color: white ; 
+}
+    
+p {
+    font-size: 20px ; 
+}
+/* image synopsis alaska */
+#imageAlaska {
+    width: 100%; 
+    height: auto ;  
+    overflow: hidden ;  /* pour que l'image soit invisible quand ca depasse */ 
+} 
+#imagePortrait {
+    width: 100% ; 
+    height: auto ; 
+    margin :auto ; 
+    overflow: hidden ;  /* pour que l'image soit invisible quand ca depasse */ 
+}
+/* Billet simple pour l'alaska */ 
+.titre-page {
+    width: 100% ; 
+    height: auto ; 
+    font-size: 18px ; 
+     
+}
+.centerSyno {
+    text-align: center ; 
+}
+hr {
+    width: 200px ; 
+    height: 0px ; 
+    border : 1px black solid ; 
+    margin-top: 25px ; 
+    margin-bottom: 15px ; 
+}
+/* Gestion du menu */ 
+.logo {
+    display : none ; 
+}
+/* NAV */ 
+nav {
+    margin:0 auto;
+    height:40px;    
+}
+nav .menu{ 
+    margin:0;
+    display:flex;
+    flex-flow: row wrap;
+    align-content:space-around;
+    padding-left:30px;
+}
+nav .menu li {
+    display: block;     
+}
+nav .menu li img {
+    padding-right:100px;       
+}    
+nav .menu li a {
+    display:block;	
+    font-family: "roboto slab";
+    line-height:40px;
+    padding:0 8px;
+    color : #666;
+    text-decoration:none;
+    border-left:1px solid #666;
+    border-bottom:1px solid #666; 
+}
+    
+nav .menu>li:last-child a{
+    border-right:1px solid #666;     
+}
+nav .menu>li:first-child{
+    padding-top:0px;
+}    
+.menu>li.selected a, .menu>li>a:hover {
+   background: #ffc013;
+} 
+.container {
+    max-width: 780px;
+    margin:0 auto;
+}
+header.visiteur {
+    height:200px;
+    background-size:cover;
+    width: 100% ;
+    background: url("../images/header.jpg") ; /* ./ = dossier précédent */ 
+    text-align:center;	
+    margin:0 0 30px 0;
+    background-color: rgb(50,50,50) ; 
+}
+/* Footer */
+footer {  
+    background: url(../images/footer.jpg);
+    background-size:cover;
+    height:250px;
+    margin-top:25px;	
+    margin: 0 ; 
+    z-index: 1 ;    
+}
+footer.dark{
+    background: #1d222d;
+    background-size:cover;
+    height:250px;
+    margin-top:25px;	
+}
+footer .link-zone {
+    height:200px;  
+} 
+footer .link-zone div{
+    width:30%;   
+}
+footer .copyright {
+    border-top: 1px solid #bcbcbc;
+    display : none ; 
+    background-color: #343c49;
+}
+footer .copyright p {
+    margin:0;
+    color: #bcbcbc;
+    text-align:center;
+    font-family:"roboto slab", serif;
+    font-size:.9em;
+    height:100px;
+    line-height:50px;     
+}
+footer .link-zone h3{
+    font-family: "caudex", Helvetica, Arial, sans-serif;
+    color:#FAFAFA;
+    font-weight:normal;
+    margin-bottom:0;
+}
+footer .link-zone p{
+    margin-top:15px;
+    font-family: "roboto slab", serif;
+    color:#99a;
+    font-weight:normal;
+    font-size:.8em;
+    line-height:1.8em;
+    margin-bottom:0;
+}
+footer .link-zone p span {
+    color:#ccd;
+    text-decoration:none; 
+}
+footer .link-zone a  {
+    color:#ccd;
+    text-decoration:none; 
+}
+.row {   /* Aligne le footer */ 
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;  
+}
+/* mes livre */
+#column1 {
+    height: auto ; 
+    width: 100% ; 
+    background-color: #ffc013 ; 
+    overflow: hidden ; 
+}
+#column2 {
+    display : none ;      
+}
+/* Zone admin */ 
+/* Voir com */
+#ComSignaler {
+    border : 2px black solid ; 
+    width: 80% ; 
+    height: auto ; 
+    text-align:  center ; 
+    margin : auto ; 
+    margin-top: 10px ;
+    padding-top: 10px ; 
+    background-color: #ffc013  ; 
+}
+#ContenerDivSignaler1 {
+    margin : auto ; 
+    border : 2px black solid ; 
+    padding-bottom: 10px ; 
+    margin-bottom: 10px ;
+    margin-top: 15px ; 
+    width: 90% ; 
+}
+#ContenerDivSignaler2 {  /* Commentaire non signaler */ 
+    margin : auto ; 
+    border : 2px black solid ; 
+    padding-bottom: 10px ; 
+    margin-bottom: 10px ;
+    margin-top: 15px ; 
+    width: 90% ; 
+}
+/* Nav Admin */
+#navAdmin {
+    text-align: center ; 
+    vertical-align: center ; 
+    z-index: 0 ; 
+    background-color: #343c49;    
+    margin-top: -30px ; 
+    height: 60px ; 
+    border-bottom: 2px #ffc013  solid ;    
+}
+
+.LienNav { 
+    Color : white  ;
+    font-family:Baskerville, Lato, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;  
+    padding-left: 8px ; 
+}
+
+} /* Fin média querie 780px */
+
+

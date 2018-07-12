@@ -1,0 +1,118 @@
+body {
+    margin : 0 ; 
+    padding : 0 ; 
+    background-color : black; 
+}
+
+
+p {
+    color : white ; 
+    text-align: center ;
+}
+/* nav */ 
+nav {
+    margin-bottom: 10px ; 
+   
+}
+nav ul{
+    padding: 0px ;
+    margin : 0px ; 
+    list-style-type: none ; 
+
+    background-color:black; 
+}
+
+nav li {
+    display: inline-block ;
+    width: 100px ; 
+    height : 40px ; 
+    margin: 0px ; 
+    padding: 0px ; 
+  /*  border-right: 1px solid white; 
+    border-bottom: 1px solid white;
+    border-left: 1px solid white; */
+
+
+    line-height: 40px ; 
+    text-align: center ;
+}
+
+nav li:hover {
+    background:#ffc013  ;
+    padding-left: 20px;
+    width: 130px;
+    -moz-transition: all .5s; 
+    -webkit-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
+   /* border : 1px white solid ; */
+}
+
+nav li a{
+    text-decoration: none ; 
+    color : white ; 
+    display: block ; 
+    font-family:'Lobster Two'; /* police a garder */
+    font-size: 20px ; 
+}
+
+nav li a:hover {
+    text-decoration: none ; 
+    color : white; 
+}
+
+/* end nav */
+header {
+  /*  border : 2px white solid ;  */
+    padding: 10px ; 
+    margin-bottom: 30px ; 
+}
+
+
+footer {
+    border : 2px white solid ; 
+    padding: 10px ; 
+    margin-top: 30px ; 
+}
+
+.center {
+    text-align: center ; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 43em ; 
+    display: block;
+}
+
+
+#interface {
+  /*  border : 1px white solid ; */
+}
+
+#score { /* dans la div de l'acceuil */ 
+   
+    height: 40px ;
+
+    color : rgb(0, 162, 232); 
+    text-align: center ; 
+
+    font-weight: bold ; 
+    
+    font-size: 40px ; 
+    line-height: 10px ; 
+}
+
+#ContenerInscription {
+    text-align: center ; 
+    border : 1px white solid ; 
+    margin : auto ; 
+    padding-bottom: 15px ; 
+    width: 45% ;
+}
+#inscription {
+    text-align: center ; 
+    
+}
+
+#blanc {
+    color : white ;
+}
