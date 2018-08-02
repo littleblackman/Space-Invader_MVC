@@ -36,6 +36,13 @@ class ControleurAccueil {
  
     }
 
+    public function DeconnexionAdmin()  {
+        session_destroy() ;         // On détruit la session et on revien a la vue acces 
+        $vue = new Vue("Connexion");   // Generation de la vue ACCES
+        $vue->generer(array());
+    }
+
+
     public function  TestConnexionMembre() { // Function effectuer au clic sur le bouton connexion 
      
         $PseudoConnexionMembre =  $_POST['ConnexionPseudo'] ; 
@@ -59,6 +66,10 @@ class ControleurAccueil {
                 // ici on met dans la session 
                 $_SESSION['loginMembre'] =  $VerifPseudo; 
                 $_SESSION['PasswordMembre'] = $VerifMDP ; 
+                
+                // ici on met dans un cookie 
+                 setcookie('VerifPseudoCookie', $VerifPseudo , time() + 365*24*3600);  // Nom, valeur,expiration
+                 setcookie('VerifMDPCookie', $VerifMDP , time() + 365*24*3600); 
 
  
                 // & Vous étes desormais enregistrer, votre score va pouvoir etre enregistrer .. 
@@ -103,7 +114,8 @@ class ControleurAccueil {
 
 
     public function Scores() {
-      
+        // Requete modele pour avoir les infos 
+        // Affichage de la vue Score
         $vue = new Vue("Scores");
         $vue->generer(array());
  

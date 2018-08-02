@@ -4,3 +4,5 @@ session_start(); // Start session
 
 $routeur = new Routeur();
 $routeur->routerRequete();
+
+?>

@@ -3,7 +3,7 @@
 require_once 'Modele/Modele.php';
 
 class admin extends Modele {
-    // Ajoute un chapitre dans la base  
+     
     public function ajouterMembre($PseudoMembre,$MailMembre,$MDPMembre,$MDPMembrehash) {
         $sql = 'insert into membres(date_inscription,nom_utilisateur,adresse_email,mot_de_passe,hash_validation)' 
             . ' values(?, ?, ?,?,?)';

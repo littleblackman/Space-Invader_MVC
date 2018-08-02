@@ -1,6 +1,6 @@
 <?php $this->titre = "Inscription"; ?>
 
-<p> Veuillez vous inscrire </p> 
+<h2> Veuillez vous inscrire </h2> 
 
 <!-- pris sur vue select chap zone admin zoneajouterchap --> 
 

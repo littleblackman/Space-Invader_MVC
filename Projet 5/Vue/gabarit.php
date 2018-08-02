@@ -45,7 +45,10 @@
     </nav> 
 
 	<header>	
+    <!--
     <img class="center" src="Contenu/images/titrespace.jpg">
+    -->
+    <h1> Space Invaders </h1> 
     </header>
     
 
@@ -58,7 +61,7 @@
     
     
     <footer>		
-        <p> @YohannDurand OpenClassroom </p> 
+        <h2> @YohannDurand OpenClassroom </h2> 
 
      </footer>
 

@@ -48,6 +48,11 @@ class Routeur {
                     if ($_GET['action'] == 'Compte') {  // Affiche la vue admin 
                         $this->ctrlAccueil->Compte(); 
                     }
+
+                    // On se deconecte avec l'action Deconnexion 
+                    if ($_GET['action'] == 'Deconnexion') {  
+                        $this->ctrlAccueil->DeconnexionAdmin(); 
+                    }
                 } // Fin du grand grand if 
                 
                 

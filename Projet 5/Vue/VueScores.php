@@ -1,10 +1,13 @@
 <?php $this->titre = "Scores"; ?>
 
 
-<p> Les meilleurs scores du mois </p> 
+<h2> Les meilleurs Scores </h2>
 
 
-<p> Les meilleurs Scores </p>
+<!-- Liste de tout les score sur id : --> 
+<!-- Moyenne des score --> 
+
+<!-- Sur la liste des score on prend le plus haut pour le meilleurs score --> 
 
 
 
