@@ -115,16 +115,25 @@ class ControleurAccueil {
 
     public function Scores() {
         // Requete modele pour avoir les infos 
+        // Requette pour avoirs la listes des meilleurs score avec leurs nom 
+        $Top5meilleursscores  = $this->admin->Recup5meilleursscores();
         // Affichage de la vue Score
         $vue = new Vue("Scores");
-        $vue->generer(array());
- 
+        $vue->generer(array(
+            'ListeMeilleursscores' => $Top5meilleursscores,           
+        ));
     }
 
     public function Compte() {
-      
+        // requete pour avoir les score du compte Selon l'id 
+        $idMembre = $_COOKIE['IdMembreCo'] ; 
+        $TopScoreId  = $this->admin->RecupScoreId($idMembre) ; 
+
+        // affichage de la vue compte 
         $vue = new Vue("Compte");
-        $vue->generer(array());
+        $vue->generer(array(
+            'ListeIdscores' => $TopScoreId, 
+        ));
  
     }
 

@@ -43,5 +43,23 @@ class admin extends Modele {
 
 
 
+    // Recupération des 5 meilleurs scores pour la page score 
+    public function Recup5meilleursscores() {
+        /* order by pour trier la colonne */ 
+         $sql = 'SELECT * FROM scoremembre WHERE scoremembres ORDER BY scoremembres DESC'  ;  
+
+        $ListeMeilleursScore = $this->executerRequete($sql,array());
+       return $ListeMeilleursScore->fetchAll();
+    }
+
+
+    // Recupération des score selon l'id    avec   $idMembre
+    public function RecupScoreId($idMembre) {
+        /* order by pour trier la colonne */ 
+         $sql = 'SELECT * FROM scoremembre WHERE scoremembres AND id = :membreidconnecter       ORDER BY scoremembres DESC'  ;  
+
+        $ListeIdScore = $this->executerRequete($sql,array('membreidconnecter'=>$idMembre));
+       return $ListeIdScore->fetchAll();
+    }
 
 } // Fin de class admin 

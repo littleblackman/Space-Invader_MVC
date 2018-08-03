@@ -1,4 +1,4 @@
-<?php $this->titre = "A Propos"; ?>
+<?php $this->titre = "Compte"; ?>
 
 <!-- Page a propos transformer en mon profil --> 
 
@@ -8,17 +8,34 @@
 <p> Nous sommes ravis de vous revoir ! </p>  
 </div> 
 
-<hr/>
 
+<h2> Votre tableau des scores </h2>
 
-<p> Votre mail </p> 
+<h2> 
+<table>
+   <tr>
+       <th>Score</th>
+       <th>Nom</th>
+       <th>Date</th>
+   </tr>
 
-<p> Vos derniers scores </p> 
+<?php foreach ($ListeIdscores as $TopScoreId): ?> 
 
-<p> Votre moyenne de score : </p> 
+   <tr>
+       <td><?php  echo $TopScoreId['scoremembres']; ?> </td>
+       <td><?php  echo $TopScoreId['pseudo']; ?> </td>
+       <td><?php  echo $TopScoreId['date_score']; ?></td>
+   </tr>
 
-<p> Vous avez jouez XX partit  </p> 
+ <?php endforeach; ?>
 
+</table>
+
+ </h2>
+ 
+
+  
 
 <a href="index.php?action=Deconnexion"  class="LienNav">Deconnexion</a>  
 <hr/>
+

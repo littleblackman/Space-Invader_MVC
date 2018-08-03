@@ -41,6 +41,8 @@ echo $getScore ;
 
 		 $idMembreConnecter = $donnees['id'] ;
 
+		 // on met dans le cookie le membre connecter , ensuite dans le controleur on le met en parametre 
+		 setcookie('IdMembreCo',$idMembreConnecter , time() + 365*24*3600); 
 
 		 ?> </br></br> <?php 
 		 ?> </br></br> <?php 

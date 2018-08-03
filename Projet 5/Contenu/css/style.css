@@ -116,6 +116,20 @@ footer {
     line-height: 10px ; 
 }
 
+/* Tableau page score */ 
+table
+{
+    margin: auto; 
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td, th
+{
+    padding: 10px ; 
+    border: 1px solid rgb(0, 162, 232);
+}
+
+
+/* **************** */ 
 #ContenerInscription {
     text-align: center ; 
     border : 1px white solid ; 

@@ -32,7 +32,7 @@ class Routeur {
                         $this->ctrlAccueil->TestConnexionMembre();        
                     }
 
-                    if ($_GET['action'] == 'Inscription') {  // Affiche la vue admin 
+                    if ($_GET['action'] == 'Inscription') {  // Affiche la vue Inscription
                         $this->ctrlAccueil->Inscription(); 
                     }
 
@@ -41,11 +41,11 @@ class Routeur {
                     }
 
 
-                    if ($_GET['action'] == 'Scores') {  // Affiche la vue admin 
+                    if ($_GET['action'] == 'Scores') {  // Affiche la vue Score 
                         $this->ctrlAccueil->Scores(); 
                     }
 
-                    if ($_GET['action'] == 'Compte') {  // Affiche la vue admin 
+                    if ($_GET['action'] == 'Compte') {  // Affiche la vue Compte
                         $this->ctrlAccueil->Compte(); 
                     }
 

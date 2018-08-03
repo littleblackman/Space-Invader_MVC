@@ -4,8 +4,9 @@
 <html lang="fr">
 <head>
         <META charset="utf-8" />
-        <title><?= $titre ?></title>
         <link rel="icon" href="Contenu/images/favicon.ico" />  
+        <title><?= $titre ?></title>
+        
 		
         <!-- Script --> 
         <script src="Contenu/js/jquery-3.2.1.js"> </script>       <!-- Bibliotheque JavaScript Jquery   --> 
@@ -36,11 +37,11 @@
     <!-- HEADER --> 
     <nav>
         <ul>
-            <li><a href="index.php">Le jeux</a></li>
+            <li><a href="index.php">Jeux</a></li>
             <li><a href=index.php?action=Connexion>   Connexion </a></li> 
             <li><a href=index.php?action=Inscription> Inscription </a></li> 
-            <li><a href=index.php?action=Scores>      Les scores </a></li> 
-            <li><a href=index.php?action=Compte>     Mon compte  </a></li> 
+            <li><a href=index.php?action=Scores>      Scores </a></li> 
+            <li><a href=index.php?action=Compte>    Compte  </a></li> 
         </ul>
     </nav> 
 
