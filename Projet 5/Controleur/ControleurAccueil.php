@@ -18,6 +18,22 @@ class ControleurAccueil {
    //    $this->chapitre = new chapitre(); // Bonne conscruct de base 
     }
 
+   public function getScore()
+   {
+      // on regarde le dernier utilisateur connecter 	A injecter via un manager
+		$Pseudosql = $_COOKIE['VerifPseudoCookie']  ; 
+		$mdpSql = $_COOKIE['VerifMDPCookie'] ; 
+		$req = $bdd->query('SELECT * FROM membres WHERE nom_utilisateur =  "'.$Pseudosql.'"  ' );
+		$donnees = $req->fetch() ; 
+		$date_enregistrement = date("Y-m-d H:i:s");    // récupére la date courante 
+		$result = $bdd->query('INSERT INTO scoremembre (id,meilleursscoremembres, scoremembres, pseudo , date_score)
+        VALUES (  "'.$idMembreConnecter.'"  , 300  ,  "'.$getScore.'"  ,    "'.$Pseudosql.'"   ,  "'.$date_enregistrement.'"    )    '); 
+ 
+ 
+		
+   }
+   
+   
     // Affiche la page d'accueil 
     public function accueil() {
       
