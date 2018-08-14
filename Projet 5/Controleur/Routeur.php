@@ -22,6 +22,9 @@ class Routeur {
             try {
                 if (isset($_GET['action'])) {
 
+                    if ($_GET['action'] == 'getScore') {  
+                        $this->ctrlAccueil->getScore();        
+                    }
 
                     // pour la connection 
                     if ($_GET['action'] == 'Connexion') {  
