@@ -4,7 +4,7 @@
 <html lang="fr">
 <head>
         <META charset="utf-8" />
-        <link rel="icon" href="Contenu/images/favicon.ico" />  
+        <link rel="icon" href="favicon.ico" />  
         <title><?= $titre ?></title>
         
 		
@@ -18,8 +18,9 @@
         <link rel="stylesheet" href="Contenu/css/style.min.1024.css" /> <!-- Max-Width 1024 --> 
 		
         
-		<META NAME="keywords" CONTENT="" />
-		<META name="description" content="  " />
+		<META NAME="keywords" CONTENT="SpaceInvader,Jeux,Game" />
+        <META name="description" content="Space Invaders des temps moderne , remis au gout du jour, Space invaders vous offrent une expérience de jeux 
+        incomparable !" />
 										
         <!-- Viewport pour enlever le dezoom sur mobile -->   
         <META name="viewport" content="width=device-width,initial-scale=1.0,shrink-to_fit=no" />          
@@ -61,7 +62,8 @@
 	<!-- Fin contenu --> 
     
     
-    <footer>		
+    <footer>	
+        <p> Jeux exclusif PC </p> 	
         <h2> @YohannDurand OpenClassroom </h2> 
 
      </footer>

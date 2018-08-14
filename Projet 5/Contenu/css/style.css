@@ -76,6 +76,20 @@ nav li a:hover {
     color : white; 
 }
 
+
+.LienNav {
+    color : white ; 
+    text-align: center ; 
+    text-decoration:none;
+    margin-left: 48%; 
+   
+}
+
+.LienNav:hover {
+    color : rgb(0, 162, 232) ;
+   
+}
+
 /* end nav */
 header {
   /*  border : 2px white solid ;  */
@@ -120,7 +134,7 @@ footer {
 table
 {
     margin: auto; 
-    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    border-collapse: collapse; /* Les bordures du tableau seront collées  */
 }
 td, th
 {
@@ -139,7 +153,13 @@ td, th
 }
 #inscription {
     text-align: center ; 
-    
+    background-color : white ; 
+    box-shadow:3px 3px 2px rgb(0, 162, 232) inset;
+    height: 25px ; 
+}
+
+.bouton_inscription {
+    background-color: rgb(0, 162, 232) ; 
 }
 
 #blanc {

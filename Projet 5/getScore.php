@@ -5,13 +5,13 @@ $getScore =  $_GET["score"];
 echo $getScore ; 
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-// gestion de score et meilleur score , avec initialisation de meilleur score a 0 
+// gestion de score 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 	  // on se connecte a la base 
 	  try
         {
-          $bdd = new PDO('mysql:host=localhost;dbname=membre;charset=utf8','root','');
+		  $bdd = new PDO('mysql:host=openclasiqspace.mysql.db;dbname=openclasiqspace;charset=utf8','openclasiqspace','AlexandreXXXX');
 	    }			 
 	    catch (Exception $e)
 		{
@@ -29,6 +29,8 @@ echo $getScore ;
 		echo $_COOKIE['VerifMDPCookie']; // renvoi MDP 
 		  
 
+		echo $_COOKIE['IdMembreCo'] ; 
+		
 		 ?> </br></br> <?php 
 		echo "var_dump de donnees" ;
 		 var_dump($donnees) ; 

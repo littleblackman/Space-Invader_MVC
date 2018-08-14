@@ -49,17 +49,10 @@ class ControleurAccueil {
         $MDPConnexionMembre =  $_POST['ConnexionMDP'] ;
 
         $VerifPseudo = $this->admin->ConnexionMembreReq($PseudoConnexionMembre);  
+
         $VerifMDP = $this->admin->ConnexionMembreReqMDP($MDPConnexionMembre);  
+       
 
-        // voir pour tout mettre dans une seul requete 
-
-        // retourne le tableau UserMembre 
-        //  $InfoMembre $this->admin->requeteInfoMembre(); 
-
-
-
-         //  $date_inscription
-         //  $score  
        
             if ( $VerifPseudo == true && $VerifMDP == true )  {
            
@@ -73,7 +66,7 @@ class ControleurAccueil {
 
  
                 // & Vous étes desormais enregistrer, votre score va pouvoir etre enregistrer .. 
-                $vue = new Vue("Compte");
+                $vue = new Vue("Accueil");    
                 $vue->generer(array());
 
            }

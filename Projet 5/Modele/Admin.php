@@ -31,13 +31,15 @@ class admin extends Modele {
 
 
     public function  ConnexionMembreReqMDP($MDPConnexionMembre) {  // == a $verifMDP
-        $sql = 'SELECT * FROM membres WHERE mot_de_passe = :MDPhash'  ;
+       $sql = 'SELECT * FROM membres WHERE mot_de_passe = :MDPhash'  ;
 
         $TabMdpMembre = $this->executerRequete($sql, array('MDPhash'=>$MDPConnexionMembre)); // tableau assiociatif
         $userMDP = $TabMdpMembre->fetch() ;  // transorme pdo 
         $userMDP['mot_de_passe'] ;  
+        return $userMDP['mot_de_passe'] ;  
 
-        return $userMDP['mot_de_passe'] ; 
+
+  
     }
 
 

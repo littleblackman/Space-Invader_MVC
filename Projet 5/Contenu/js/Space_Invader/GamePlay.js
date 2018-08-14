@@ -13,13 +13,11 @@
     var looser = 0          ; 
     var looser1 = 1          ; 
 
-
     var resistanceAbri = 12 ; // 4 X 3 Tir = 4 images d'annimation ;  Normal, un peu desaillé, bcp dessailer, plus d'abri
     var resistanceAbri1 = 12 ; // 4 X 3 Tir = 4 images d'annimation ;  
     var resistanceAbri2 = 12 ; // 4 X 3 Tir = 4 images d'annimation ;
     var resistanceAbri3 = 12 ; // 4 X 3 Tir = 4 images d'annimation ;
     var resistanceAbri4 = 12 ; // 4 X 3 Tir = 4 images d'annimation ;
-
 
     var TirOk = 0           ; // pour ne pas tirer quand il n'y a pas de mobs 
 
@@ -31,7 +29,6 @@
 
 
     var text = null; 
-
     
     var STATE_GAME_NONE      =0; 
     var STATE_GAME_LOADING   =1;
@@ -60,7 +57,7 @@ GamePlayManager = {
         game.load.image('background', 'Contenu/images/background.jpg') ; // XX x XX 
         game.load.image('shooter', 'Contenu/images/shooter1modif.png') ; // XX x XX  
         game.load.image('laser' , 'Contenu/images/tir.png')  ;
-        game.load.image('enemigo', 'Contenu/images/mobs1modif.png') ; // XX x XX
+        game.load.image('enemigo', 'Contenu/images/mobs1modif.PNG') ; // XX x XX
         game.load.image('abri', 'Contenu/images/Abri1.PNG' , 65,65,2 ) ; // XX x XX  
 
         game.load.image('abrilvl3' ,   'Contenu/images/abri3.PNG') ; 
